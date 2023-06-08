@@ -1,0 +1,167 @@
+[
+    {
+        "image": "course1.jpg",
+        "topic": "English for Beginners",
+        "category": "English",
+        "instructor_name": "John Smith",
+        "instructor_email": "john@example.com",
+        "available_seats": 20,
+        "price": 99.99,
+        "booking_seats": 0,
+        "status": "pending"
+    },
+    {
+        "image": "course2.jpg",
+        "topic": "Spanish for Beginners",
+        "category": "Spanish",
+        "instructor_name": "Maria Garcia",
+        "instructor_email": "maria@example.com",
+        "available_seats": 15,
+        "price": 129.99,
+        "booking_seats": 5,
+        "status": "approved"
+    },
+    {
+        "image": "course3.jpg",
+        "topic": "Japanese for Beginners",
+        "category": "Japanese",
+        "instructor_name": "Takeshi Tanaka",
+        "instructor_email": "takeshi@example.com",
+        "available_seats": 18,
+        "price": 149.99,
+        "booking_seats": 2,
+        "status": "approved"
+    },
+    {
+        "image": "course4.jpg",
+        "topic": "French for Beginners",
+        "category": "French",
+        "instructor_name": "Sophie Martin",
+        "instructor_email": "sophie@example.com",
+        "available_seats": 10,
+        "price": 99.99,
+        "booking_seats": 0,
+        "status": "pending"
+    },
+    {
+        "image": "course5.jpg",
+        "topic": "Chinese for Beginners",
+        "category": "Chinese",
+        "instructor_name": "Li Wei",
+        "instructor_email": "li@example.com",
+        "available_seats": 25,
+        "price": 119.99,
+        "booking_seats": 5,
+        "status": "approved"
+    },
+    {
+        "image": "course6.jpg",
+        "topic": "English for Intermediate",
+        "category": "English",
+        "instructor_name": "Emily Johnson",
+        "instructor_email": "emily@example.com",
+        "available_seats": 15,
+        "price": 149.99,
+        "booking_seats": 3,
+        "status": "approved"
+    },
+    {
+        "image": "course7.jpg",
+        "topic": "Spanish for Intermediate",
+        "category": "Spanish",
+        "instructor_name": "Carlos Fernandez",
+        "instructor_email": "carlos@example.com",
+        "available_seats": 12,
+        "price": 139.99,
+        "booking_seats": 2,
+        "status": "approved"
+    },
+    {
+        "image": "course8.jpg",
+        "topic": "Japanese for Intermediate",
+        "category": "Japanese",
+        "instructor_name": "Yumi Suzuki",
+        "instructor_email": "yumi@example.com",
+        "available_seats": 20,
+        "price": 159.99,
+        "booking_seats": 8,
+        "status": "approved"
+    },
+    {
+        "image": "course9.jpg",
+        "topic": "French for Intermediate",
+        "category": "French",
+        "instructor_name": "Antoine Dubois",
+        "instructor_email": "antoine@example.com",
+        "available_seats": 8,
+        "price": 129.99,
+        "booking_seats": 1,
+        "status": "approved"
+    },
+    {
+        "image": "course10.jpg",
+        "topic": "Chinese for Intermediate",
+        "category": "Chinese",
+        "instructor_name": "Wei Chen",
+        "instructor_email": "wei@example.com",
+        "available_seats": 15,
+        "price": 139.99,
+        "booking_seats": 4,
+        "status": "approved"
+    },
+    {
+        "image": "course11.jpg",
+        "topic": "English Intensive Course",
+        "category": "English",
+        "instructor_name": "Robert Thompson",
+        "instructor_email": "robert@example.com",
+        "available_seats": 10,
+        "price": 199.99,
+        "booking_seats": 2,
+        "status": "approved"
+    },
+    {
+        "image": "course12.jpg",
+        "topic": "Spanish Intensive Course",
+        "category": "Spanish",
+        "instructor_name": "Ana Rodriguez",
+        "instructor_email": "ana@example.com",
+        "available_seats": 8,
+        "price": 189.99,
+        "booking_seats": 0,
+        "status": "pending"
+    },
+    {
+        "image": "course13.jpg",
+        "topic": "Japanese Intensive Course",
+        "category": "Japanese",
+        "instructor_name": "Hiroshi Nakamura",
+        "instructor_email": "hiroshi@example.com",
+        "available_seats": 10,
+        "price": 209.99,
+        "booking_seats": 1,
+        "status": "approved"
+    },
+    {
+        "image": "course14.jpg",
+        "topic": "French Intensive Course",
+        "category": "French",
+        "instructor_name": "Isabelle Lambert",
+        "instructor_email": "isabelle@example.com",
+        "available_seats": 6,
+        "price": 179.99,
+        "booking_seats": 0,
+        "status": "pending"
+    },
+    {
+        "image": "course15.jpg",
+        "topic": "Chinese Intensive Course",
+        "category": "Chinese",
+        "instructor_name": "Xiao Ming",
+        "instructor_email": "xiaoming@example.com",
+        "available_seats": 12,
+        "price": 189.99,
+        "booking_seats": 3,
+        "status": "approved"
+    }
+]
