@@ -31,12 +31,18 @@ async function run() {
         // await client.connect();
         const classesCollection = client.db('learnDB').collection('classes');
 
-        // classes api 
+        // classes relative api 
         // get all classes 
         app.get('/classes', async (req, res) => {
             const result = await classesCollection.find().toArray()
             res.send(result)
         })
+
+        // get data in language 
+        app.get("/classes/:language", async (req, res) => {
+            const result = await classesCollection.find({ language: req.params.language }).toArray();
+            res.send(result);
+        });
 
 
         await client.db("admin").command({ ping: 1 });

@@ -1,8 +1,8 @@
 [
     {
-        "image": "course1.jpg",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-english-school-illustration_23-2149590570.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "English for Beginners",
-        "category": "English",
+        "language": "English",
         "instructor_name": "John Smith",
         "instructor_email": "john@example.com",
         "available_seats": 20,
@@ -11,9 +11,9 @@
         "status": "pending"
     },
     {
-        "image": "course2.jpg",
+        "image": "https://img.freepik.com/free-vector/spanish-concept-illustration_114360-15686.jpg?size=338&ext=jpg&ga=GA1.2.1613183627.1673832056&semt=ais",
         "topic": "Spanish for Beginners",
-        "category": "Spanish",
+        "language": "Spanish",
         "instructor_name": "Maria Garcia",
         "instructor_email": "maria@example.com",
         "available_seats": 15,
@@ -22,9 +22,9 @@
         "status": "approved"
     },
     {
-        "image": "course3.jpg",
+        "image": "https://img.freepik.com/premium-vector/japaneselanguagebackgroundcloudschinesechinalandscape_49022-62.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "Japanese for Beginners",
-        "category": "Japanese",
+        "language": "Japanese",
         "instructor_name": "Takeshi Tanaka",
         "instructor_email": "takeshi@example.com",
         "available_seats": 18,
@@ -33,9 +33,9 @@
         "status": "approved"
     },
     {
-        "image": "course4.jpg",
+        "image": "https://img.freepik.com/free-vector/french-lesson-with-tutor-teacher-banner_570502-42.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "French for Beginners",
-        "category": "French",
+        "language": "French",
         "instructor_name": "Sophie Martin",
         "instructor_email": "sophie@example.com",
         "available_seats": 10,
@@ -44,9 +44,9 @@
         "status": "pending"
     },
     {
-        "image": "course5.jpg",
+        "image": "https://img.freepik.com/free-vector/chinese-lesson-with-tutor-teacher-banner-background-people-speak-foreign-language-communication-conversation-study-chinese-language-culture-theme-education_570502-40.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "Chinese for Beginners",
-        "category": "Chinese",
+        "language": "Chinese",
         "instructor_name": "Li Wei",
         "instructor_email": "li@example.com",
         "available_seats": 25,
@@ -55,9 +55,9 @@
         "status": "approved"
     },
     {
-        "image": "course6.jpg",
+        "image": "https://img.freepik.com/free-photo/english-book-resting-table-working-space_23-2149429594.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "English for Intermediate",
-        "category": "English",
+        "language": "English",
         "instructor_name": "Emily Johnson",
         "instructor_email": "emily@example.com",
         "available_seats": 15,
@@ -66,9 +66,9 @@
         "status": "approved"
     },
     {
-        "image": "course7.jpg",
+        "image": "https://img.freepik.com/premium-vector/online-spanish-language-courses-remote-school-university-concept_88272-3296.jpg?size=626&ext=jpg&ga=GA1.2.1613183627.1673832056&semt=ais",
         "topic": "Spanish for Intermediate",
-        "category": "Spanish",
+        "language": "Spanish",
         "instructor_name": "Carlos Fernandez",
         "instructor_email": "carlos@example.com",
         "available_seats": 12,
@@ -77,9 +77,9 @@
         "status": "approved"
     },
     {
-        "image": "course8.jpg",
+        "image": "https://img.freepik.com/free-vector/chinese-lesson-with-tutor-teacher-banner-background-people-speak-foreign-language-communication-conversation-study-chinese-language-culture-theme-education_570502-40.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "Japanese for Intermediate",
-        "category": "Japanese",
+        "language": "Japanese",
         "instructor_name": "Yumi Suzuki",
         "instructor_email": "yumi@example.com",
         "available_seats": 20,
@@ -88,9 +88,9 @@
         "status": "approved"
     },
     {
-        "image": "course9.jpg",
+        "image": "https://img.freepik.com/free-photo/learn-french-language-online-education-concept_53876-133943.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "French for Intermediate",
-        "category": "French",
+        "language": "French",
         "instructor_name": "Antoine Dubois",
         "instructor_email": "antoine@example.com",
         "available_seats": 8,
@@ -99,9 +99,9 @@
         "status": "approved"
     },
     {
-        "image": "course10.jpg",
+        "image": "https://img.freepik.com/free-vector/learning-chinese-concept-illustration_114360-16499.jpg?size=338&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "Chinese for Intermediate",
-        "category": "Chinese",
+        "language": "Chinese",
         "instructor_name": "Wei Chen",
         "instructor_email": "wei@example.com",
         "available_seats": 15,
@@ -110,9 +110,9 @@
         "status": "approved"
     },
     {
-        "image": "course11.jpg",
+        "image": "https://img.freepik.com/premium-vector/learn-english-design_24908-7443.jpg?size=338&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "English Intensive Course",
-        "category": "English",
+        "language": "English",
         "instructor_name": "Robert Thompson",
         "instructor_email": "robert@example.com",
         "available_seats": 10,
@@ -121,9 +121,9 @@
         "status": "approved"
     },
     {
-        "image": "course12.jpg",
+        "image": "https://img.freepik.com/premium-vector/concept-learning-spanish-language-foreign-language-course_575838-254.jpg?size=338&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "Spanish Intensive Course",
-        "category": "Spanish",
+        "language": "Spanish",
         "instructor_name": "Ana Rodriguez",
         "instructor_email": "ana@example.com",
         "available_seats": 8,
@@ -132,9 +132,9 @@
         "status": "pending"
     },
     {
-        "image": "course13.jpg",
+        "image": "https://img.freepik.com/premium-vector/japanese-language-japanese-school-course-study-foreign_277904-16277.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "Japanese Intensive Course",
-        "category": "Japanese",
+        "language": "Japanese",
         "instructor_name": "Hiroshi Nakamura",
         "instructor_email": "hiroshi@example.com",
         "available_seats": 10,
@@ -143,9 +143,9 @@
         "status": "approved"
     },
     {
-        "image": "course14.jpg",
+        "image": "https://img.freepik.com/premium-vector/french-learning-concept-language-school-french-course-study-foreign-languages-with-native-speaker-idea-global-communication-vector-illustration-cartoon-style_277904-16099.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "French Intensive Course",
-        "category": "French",
+        "language": "French",
         "instructor_name": "Isabelle Lambert",
         "instructor_email": "isabelle@example.com",
         "available_seats": 6,
@@ -154,9 +154,9 @@
         "status": "pending"
     },
     {
-        "image": "course15.jpg",
+        "image": "https://img.freepik.com/free-photo/learning-programming-language_1098-19547.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "topic": "Chinese Intensive Course",
-        "category": "Chinese",
+        "language": "Chinese",
         "instructor_name": "Xiao Ming",
         "instructor_email": "xiaoming@example.com",
         "available_seats": 12,
