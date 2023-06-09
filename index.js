@@ -30,6 +30,7 @@ async function run() {
     try {
         // await client.connect();
         const classesCollection = client.db('learnDB').collection('classes');
+        const studentCollection = client.db('learnDB').collection('selected');
 
         // classes relative api 
         // get all classes 
@@ -44,6 +45,14 @@ async function run() {
             res.send(result);
         });
 
+
+        // student relative api 
+        // selected data post 
+        app.post('/selected', async (req, res) => {
+            const select = req.body
+            const result = await studentCollection.insertOne(select);
+            res.send(result)
+        })
 
         await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
