@@ -14,7 +14,7 @@ app.use(cors(corsOptions))
 app.use(express.json())
 
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.9tzptnp.mongodb.net/?retryWrites=true&w=majority`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -47,12 +47,34 @@ async function run() {
 
 
         // student relative api 
-        // selected data post 
-        app.post('/selected', async (req, res) => {
+        // selected data put 
+        app.put('/selected/:id', async (req, res) => {
             const select = req.body
-            const result = await studentCollection.insertOne(select);
+            const filter = { _id: new ObjectId(req.params.id) }
+            const options = { upsert: true }
+            const updateDoc = {
+                $set: select,
+            }
+            const result = await studentCollection.updateOne(filter, updateDoc, options)
             res.send(result)
         })
+
+        // get selected data by email
+        app.get("/selected/:email", async (req, res) => {
+            const result = await studentCollection.find({ student_email: req.params.email }).toArray();
+            res.send(result);
+        });
+
+        // delete selected data by id
+        app.delete('/selected/:id', async (req, res) => {
+            const id = req.params.id;
+            // console.log(id)
+            const query = { _id: new ObjectId(id) }
+
+            const result = await studentCollection.deleteOne(query)
+            res.send(result)
+        })
+
 
         await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");

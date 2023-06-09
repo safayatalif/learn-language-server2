@@ -8,7 +8,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/woman-learning-english-online-e1625538535869-p9p4lrjtk1sd2tmdyid28uz6flhqadle7aui7qrlao.jpg",
         "available_seats": 20,
         "price": 99.99,
-        "booking_seats": 0,
+        "total_set": 20,
         "status": "pending"
     },
     {
@@ -20,7 +20,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/student-using-laptop-having-online-class-with-teacher-pov-e1625538594703-p9p4nb0ar9wa3tdtyoc1tyzdhbwdwipk2xc5j2hd3k.jpg",
         "available_seats": 15,
         "price": 129.99,
-        "booking_seats": 5,
+        "total_set": 20,
         "status": "approved"
     },
     {
@@ -32,7 +32,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/online-education-young-arab-guy-watching-webinar-on-laptop-and-taking-notes-e1625538610179-p9p4nq1psmgv9krziuu2xv6qzhu9bod9gzrx7hv2c0.jpg",
         "available_seats": 18,
         "price": 149.99,
-        "booking_seats": 2,
+        "total_set": 20,
         "status": "approved"
     },
     {
@@ -44,7 +44,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/student-listening-colleagues-during-online-videocall-school-e1625538555721-p9p4maclcqi3j0v2wqhlmq8ebax2kbo0xvw7t9zpu8.jpg",
         "available_seats": 10,
         "price": 99.99,
-        "booking_seats": 0,
+        "total_set": 20,
         "status": "pending"
     },
     {
@@ -54,9 +54,9 @@
         "instructor_name": "Li Wei",
         "instructor_email": "li@example.com",
         "instructor_image": "https://img.freepik.com/free-photo/teacher-smart-instructor-grey-suit-classroom-with-computer-whiteboard-explaining-math_140725-163363.jpg?size=626&ext=jpg&ga=GA1.2.1613183627.1673832056&semt=ais",
-        "available_seats": 25,
+        "available_seats": 15,
         "price": 119.99,
-        "booking_seats": 5,
+        "total_set": 20,
         "status": "approved"
     },
     {
@@ -68,7 +68,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/girl-making-a-video-call-online-on-the-internet--e1625538546462-p9p4m1w1n86imj7da4tyiad8yu2rn1qfwq0uhsc9e8.jpg",
         "available_seats": 15,
         "price": 149.99,
-        "booking_seats": 3,
+        "total_set": 20,
         "status": "approved"
     },
     {
@@ -80,7 +80,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/girl-in-headset-looking-at-laptop-screen-watching-online-lesson-p9f5rjcwxzphv42gc19jw8acc7si6s4js0et96r1jk.jpg",
         "available_seats": 12,
         "price": 139.99,
-        "booking_seats": 2,
+        "total_set": 20,
         "status": "approved"
     },
     {
@@ -92,7 +92,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/online-education-young-black-female-studying-online-from-home-with-laptop-computer-p9f5jmjtf6vm59k5j45leq5ocgsaehpvouqouchbww.jpg",
         "available_seats": 20,
         "price": 159.99,
-        "booking_seats": 8,
+        "total_set": 20,
         "status": "approved"
     },
     {
@@ -104,7 +104,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/happy-arab-guy-student-learning-foreign-language-online-e1625538616107-p9p4nvoqxmol78jslx9uctrijt2gluznhrou35mpao.jpg",
         "available_seats": 8,
         "price": 129.99,
-        "booking_seats": 1,
+        "total_set": 20,
         "status": "approved"
     },
     {
@@ -116,7 +116,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/happy-arab-guy-student-learning-foreign-language-online-e1625538616107-p9p4nvoqxmol78jslx9uctrijt2gluznhrou35mpao.jpg",
         "available_seats": 15,
         "price": 139.99,
-        "booking_seats": 4,
+        "total_set": 20,
         "status": "approved"
     },
     {
@@ -128,7 +128,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/male-student-wearing-headphones-taking-online-course-seminar-watching-webinar--e1625538582195-p9p4mzq8h9gu8hu7sjgj01tucpfzc5gs1dibrqy368.jpg",
         "available_seats": 10,
         "price": 199.99,
-        "booking_seats": 2,
+        "total_set": 20,
         "status": "approved"
     },
     {
@@ -140,7 +140,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/young-mixed-race-student-in-eyeglasses-and-casualwear-taking-online-course-p9f5iopml5lajaxb0pj0wyp2ylf2pdzjk797kdvi4w.jpg",
         "available_seats": 8,
         "price": 189.99,
-        "booking_seats": 0,
+        "total_set": 20,
         "status": "pending"
     },
     {
@@ -152,7 +152,7 @@
         "instructor_image": "https://templatekit.jegtheme.com/verbalizer/wp-content/uploads/sites/117/elementor/thumbs/young-latin-woman-in-black-headphones-teaching-english-online-e1625538522520-p9p4lfbx37bmvw44xv2wug26pl5yib8vtmd6z59pjk.jpg",
         "available_seats": 10,
         "price": 209.99,
-        "booking_seats": 1,
+        "total_set": 20,
         "status": "approved"
     },
     {
@@ -164,7 +164,7 @@
         "instructor_image": "https://img.freepik.com/free-photo/teacher-brunette-instructor-with-computer-suit-whiteboard-classroom-drawing-board_140725-163247.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "available_seats": 6,
         "price": 179.99,
-        "booking_seats": 0,
+        "total_set": 20,
         "status": "pending"
     },
     {
@@ -176,7 +176,7 @@
         "instructor_image": "https://img.freepik.com/premium-photo/online-schooling-male-teacher-standing-near-empty-blackboard-with-clipboard-giving-remote-lecture_116547-19809.jpg?size=626&ext=jpg&ga=GA1.1.1613183627.1673832056&semt=ais",
         "available_seats": 12,
         "price": 189.99,
-        "booking_seats": 3,
+        "total_set": 20,
         "status": "approved"
     }
 ]
