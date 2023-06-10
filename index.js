@@ -53,8 +53,9 @@ async function run() {
         // await client.connect();
         const classesCollection = client.db('learnDB').collection('classes');
         const studentCollection = client.db('learnDB').collection('selected');
+        const usersCollection = client.db('learnDB').collection('users');
 
-
+        // jwt create api 
         app.post('/jwt', (req, res) => {
             const user = req.body
             const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
@@ -62,6 +63,27 @@ async function run() {
             })
 
             res.send({ token })
+        })
+
+        // Save user email and set role in DB
+        app.put('/users/:email', async (req, res) => {
+            const email = req.params.email
+            const user = req.body
+            const query = { email: email }
+            const options = { upsert: true }
+            const updateDoc = {
+                $set: user,
+            }
+            const result = await usersCollection.updateOne(query, updateDoc, options)
+            res.send(result)
+        })
+
+        // Get user
+        app.get('/users/:email', async (req, res) => {
+            const email = req.params.email
+            const query = { email: email }
+            const result = await usersCollection.findOne(query)
+            res.send(result)
         })
 
         // classes relative api 
@@ -76,6 +98,13 @@ async function run() {
             const result = await classesCollection.find({ language: req.params.language }).toArray();
             res.send(result);
         });
+
+        // post class relative api 
+        app.post('/classes', verifyJWT, async (req, res) => {
+            const room = req.body
+            const result = await classesCollection.insertOne(room)
+            res.send(result)
+          })
 
 
         // student relative api 
@@ -100,7 +129,6 @@ async function run() {
         // delete selected data by id
         app.delete('/selected/:id', async (req, res) => {
             const id = req.params.id;
-            // console.log(id)
             const query = { _id: new ObjectId(id) }
 
             const result = await studentCollection.deleteOne(query)
