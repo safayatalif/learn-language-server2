@@ -93,18 +93,45 @@ async function run() {
             res.send(result)
         })
 
-        // get data in language 
+
+        // get data in status 
+        app.get("/classes/:status", async (req, res) => {
+            const result = await classesCollection.find({ status: req.params.status }).toArray();
+            res.send(result);
+        });
+
+
         app.get("/classes/:language", async (req, res) => {
             const result = await classesCollection.find({ language: req.params.language }).toArray();
             res.send(result);
         });
+        // // get data in email
+        // app.get("/classes/:email", async (req, res) => {
+
+        //     console.log(req.params.email)
+        //     const result = await classesCollection.find({ instructor_email: req.params.email }).toArray();
+        //     res.send(result);
+        // });
+
+        // get data in email
+        app.get('/classes/:email', async (req, res) => {
+            const email = req.params.email
+            const status = req.query
+
+            console.log(status)
+
+            console.log(email);
+            const query = { instructor_email: email, status: status }
+            const result = await classesCollection.find(query).toArray()
+            res.send(result)
+        })
 
         // post class relative api 
         app.post('/classes', verifyJWT, async (req, res) => {
             const room = req.body
             const result = await classesCollection.insertOne(room)
             res.send(result)
-          })
+        })
 
 
         // student relative api 
