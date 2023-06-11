@@ -99,6 +99,11 @@ async function run() {
             const result = await classesCollection.find().toArray()
             res.send(result)
         })
+        // get six classes 
+        app.get('/classes/six', async (req, res) => {
+            const result = await classesCollection.find().sort({ available_seats: 1 }).limit(6).toArray()
+            res.send(result)
+        })
 
 
         // get data in status 
@@ -155,7 +160,7 @@ async function run() {
 
         // get selected data by email
         app.get("/selected/:email", async (req, res) => {
-            const result = await studentCollection.find({ student_email: req.params.email }).toArray();
+            const result = await studentCollection.find({ student_email: req.params.email }).sort({ _id: 1 }).toArray();
             res.send(result);
         });
 
