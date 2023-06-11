@@ -79,10 +79,17 @@ async function run() {
         })
 
         // Get user
-        app.get('/users/:email', async (req, res) => {
+        app.get('/users/role/:email', async (req, res) => {
             const email = req.params.email
             const query = { email: email }
             const result = await usersCollection.findOne(query)
+            res.send(result)
+        })
+
+        // get all user 
+
+        app.get("/users", verifyJWT, async (req, res) => {
+            const result = await usersCollection.find().toArray()
             res.send(result)
         })
 
@@ -95,41 +102,40 @@ async function run() {
 
 
         // get data in status 
-        app.get("/classes/:status", async (req, res) => {
+        app.get("/classes/status/:status", verifyJWT, async (req, res) => {
             const result = await classesCollection.find({ status: req.params.status }).toArray();
             res.send(result);
         });
 
 
-        app.get("/classes/:language", async (req, res) => {
+        app.get("/classes/language/:language", async (req, res) => {
             const result = await classesCollection.find({ language: req.params.language }).toArray();
             res.send(result);
         });
-        // // get data in email
-        // app.get("/classes/:email", async (req, res) => {
-
-        //     console.log(req.params.email)
-        //     const result = await classesCollection.find({ instructor_email: req.params.email }).toArray();
-        //     res.send(result);
-        // });
 
         // get data in email
-        app.get('/classes/:email', async (req, res) => {
+        app.get('/classes/instructor/:email', async (req, res) => {
             const email = req.params.email
-            const status = req.query
-
-            console.log(status)
-
-            console.log(email);
-            const query = { instructor_email: email, status: status }
+            const query = { instructor_email: email }
             const result = await classesCollection.find(query).toArray()
             res.send(result)
         })
 
         // post class relative api 
         app.post('/classes', verifyJWT, async (req, res) => {
-            const room = req.body
-            const result = await classesCollection.insertOne(room)
+            const item = req.body
+            const result = classesCollection.insertOne(item)
+            res.send(result)
+        })
+        // post class relative api 
+        app.patch('/classes/:id', async (req, res) => {
+            const status = req.body
+            console.log(status, req.params.id)
+            const filter = { _id: new ObjectId(req.params.id) }
+            const updateDoc = {
+                $set: status,
+            }
+            const result = await classesCollection.updateOne(filter, updateDoc)
             res.send(result)
         })
 
