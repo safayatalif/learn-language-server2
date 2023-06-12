@@ -25,7 +25,6 @@ const verifyJWT = (req, res, next) => {
 
     jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
         if (err) {
-
             return res
                 .status(401)
                 .send({ error: true, message: 'unauthorized access' })
@@ -50,7 +49,6 @@ const client = new MongoClient(uri, {
 
 async function run() {
     try {
-        // await client.connect();
         const classesCollection = client.db('learnDB').collection('classes');
         const studentCollection = client.db('learnDB').collection('selected');
         const usersCollection = client.db('learnDB').collection('users');
@@ -61,10 +59,10 @@ async function run() {
             const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
                 expiresIn: '7d',
             })
-
             res.send({ token })
         })
 
+        // user relative api 
         // Save user email and set role in DB
         app.put('/users/:email', async (req, res) => {
             const email = req.params.email
@@ -87,7 +85,6 @@ async function run() {
         })
 
         // get all user 
-
         app.get("/users", verifyJWT, async (req, res) => {
             const result = await usersCollection.find().toArray()
             res.send(result)
@@ -101,7 +98,7 @@ async function run() {
         })
         // get six classes 
         app.get('/classes/six', async (req, res) => {
-            const result = await classesCollection.find().sort({ available_seats: 1 }).limit(6).toArray()
+            const result = await classesCollection.find().sort({ available_seats: 1 }).limit(6).toArray();
             res.send(result)
         })
 
@@ -135,7 +132,6 @@ async function run() {
         // post class relative api 
         app.patch('/classes/:id', async (req, res) => {
             const status = req.body
-            console.log(status, req.params.id)
             const filter = { _id: new ObjectId(req.params.id) }
             const updateDoc = {
                 $set: status,
