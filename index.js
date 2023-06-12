@@ -59,7 +59,7 @@ async function run() {
         app.post('/jwt', (req, res) => {
             const user = req.body
             const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
-                expiresIn: '1h',
+                expiresIn: '7d',
             })
 
             res.send({ token })
@@ -160,7 +160,7 @@ async function run() {
 
         // get selected data by email
         app.get("/selected/:email", async (req, res) => {
-            const result = await studentCollection.find({ student_email: req.params.email }).sort({ _id: 1 }).toArray();
+            const result = await studentCollection.find({ student_email: req.params.email }).sort({ _id: -1 }).toArray();
             res.send(result);
         });
 
@@ -188,6 +188,14 @@ async function run() {
                 clientSecret: paymentIntent.client_secret,
             })
         })
+
+        app.post('/payment', async (req, res) => {
+            const item = req.body
+            const result = await paymentCollection.insertOne(item)
+            res.send(result)
+        })
+
+
 
 
         await client.db("admin").command({ ping: 1 });
